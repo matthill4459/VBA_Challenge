@@ -9,5 +9,5 @@ This code will also color code the yearly change with Red meaning a negative cha
 Kelly Kennedy was my tutor.
 -       The code sources Kelly helped me write is as follows.
 -       lines 3 - 10, 38 - 46, 53 - 69, 122 - 136.
-ChatGPT also helped me source a dew code lines
+ChatGPT also helped me source a few code lines
 -       lines 12 - 21, and 97 - 109.    
