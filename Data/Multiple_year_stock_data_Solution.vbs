@@ -1,6 +1,6 @@
-Sub Stock()
-
-    Dim WorksheetName As String
+Sub Market_exchange()
+ 
+ Dim WorksheetName As String
     Dim Ticker As String
     Dim Opening As Double
     Dim Yearly_change As Double
@@ -56,10 +56,10 @@ Sub Stock()
             
             Yearly_change = ws.Cells(i, 6).Value - Opening
             
-          'Percentage caluculation  
+          'Percentage caluculation
         If Opening <> 0 Then
         
-            Percent_Change = (Yearly_change / Opening) * 100
+            Percent_Change = (Yearly_change / Opening)
             
         Else: Percent_Change = 0
             
@@ -74,10 +74,14 @@ Sub Stock()
           
             ws.Range("l" & 2 + j).Value = Total_Stock_Volume
             
-          'Color code   
+            ws.Range("k" & 2 + j).NumberFormat = "0.00%"
+            
+            ws.Range("q" & 2 + j).NumberFormat = "0.00%"
+            
+          'Color code
         Dim YearlyChangeCell As Range
                 
-        Set YearlyChangeCell = ws.Range("J" & 2 + j)     
+        Set YearlyChangeCell = ws.Range("J" & 2 + j)
        
         If Yearly_change >= 0 Then
                     
@@ -151,3 +155,4 @@ Sub Stock()
  
     
 End Sub
+
